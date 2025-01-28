@@ -66,3 +66,15 @@ footer {
     max-width: 200px; 
     object-fit: contain; 
 }
+
+.card-img-top {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 200px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Recorta y centra la imagen para que se ajuste a las dimensiones */
+}
+
+
+
+
+
+
