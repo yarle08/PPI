@@ -1,0 +1,50 @@
+body {
+    background-color: #001f3d;
+}
+header {
+    background-color: #00264d;
+}
+footer {
+    background-color: #00264d;
+}
+.text-white {
+    color: #ffffff !important;
+}
+.btn-primary {
+    background-color: #004d80;
+    border-color: #004d80;
+}
+.btn-primary:hover {
+    background-color: #003b66;
+    border-color: #003b66;
+}
+.hero-content {
+    background-color: #003366;
+}
+.section-title {
+    color: #fff;
+}
+.contact-section {
+    background-color: #003366;
+    color: #fff;
+}
+.form-control:focus {
+    border-color: #004d80;
+    box-shadow: 0 0 0 0.25rem rgba(0, 77, 128, 0.25);
+}
+.img-fluid {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.logo img {
+    max-height: 100px; 
+    max-width: 200px; 
+    object-fit: contain; 
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+    font-size: 1rem;
+}
