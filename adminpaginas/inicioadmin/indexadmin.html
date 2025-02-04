@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portuaria - Gestión y Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="../../static/img/icons/logo_espomalia.png" alt="Logo Portuaria" class="img-fluid">
+                <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+            </div>
+            <nav class="d-none d-md-flex">
+                <a href="#" class="text-white text-decoration-none mx-3">Inicio</a>
+                <a href="../nuestros_serviciosadmin/nuestro_servicios.html" class="text-white text-decoration-none mx-3">Nuestros Servicios</a>
+                <a href="../sobrenosotros_admin/sobre_nosotros.html" class="text-white text-decoration-none mx-3">Sobre Nosotros</a>
+                <a href="../organigrama_admin/organigrama.html" class="text-white text-decoration-none mx-3">Organigrama</a>
+                <a href="../contactenosadmin/contactenos.html" class="text-white text-decoration-none mx-3">Contáctanos</a>
+
+            </nav>
+            <a href="../../index.html" class="btn btn-danger">Salir</a>
+        </div>
+    </header>
+
+    
+    </header>
+
+    <section class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../static/img/fondo1-scroll.jpg" class="d-block w-100" alt="Imagen 1">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none position-absolute top-0 start-0 m-3" onclick="triggerFileInput(this)">Editar</button>
+                    <div class="carousel-caption d-none d-md-block"  style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+                        <h5 contenteditable="true">Optimización Portuaria</h5>
+                        <p contenteditable="true">Mejorando los procesos logísticos para un futuro más eficiente.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../static/img/fondo2-scroll.webp" class="d-block w-100" alt="Imagen 2">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none position-absolute top-0 start-0 m-3" onclick="triggerFileInput(this)">Editar</button>
+                    <div class="carousel-caption d-none d-md-block"  style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+                        <h5 contenteditable="true">Logística Global</h5>
+                        <p contenteditable="true">Conectando puertos, mercados y oportunidades a nivel mundial.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../static/img/fondos3-scroll.jpg" class="d-block w-100" alt="Imagen 3">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none position-absolute top-0 start-0 m-3" onclick="triggerFileInput(this)">Editar</button>
+                    <div class="carousel-caption d-none d-md-block"  style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+                        <h5 contenteditable="true">Soluciones Sostenibles</h5>
+                        <p contenteditable="true">Comprometidos con un futuro verde en el comercio internacional.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="hero-content text-center text-white py-5">
+            <h1 contenteditable="true">ESPOMALIA C.LTDA</h1>
+            <h2 contenteditable="true">Gestión y Servicios</h2>
+            <button onclick="window.location.href='paginas/contactenos/contactenos.html'" class="btn btn-light mt-3">Contáctanos</button>
+        </div>
+    </section>
+
+    <section class="company-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4" contenteditable="true">Nuestra Empresa</h2>
+            <p class="lead" contenteditable="true">En ESPOMALIA C.LTDA, nos dedicamos a ofrecer soluciones logísticas de alta calidad, con un enfoque en la sostenibilidad y la eficiencia. A lo largo de los años, hemos establecido alianzas estratégicas que nos permiten conectar mercados y optimizar los procesos en el comercio internacional.</p>
+            <p class="lead" contenteditable="true">Nuestra misión es ser líderes en el sector portuario, brindando servicios confiables y a medida para nuestros clientes, mientras nos mantenemos comprometidos con la innovación y la protección del medio ambiente.</p>
+        </div>
+    </section>
+
+    <section class="team-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4" contenteditable="true">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../../static/img/mision.png" alt="Misión" class="card-img-top">
+                        <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                        <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                        <div class="card-body">
+                            <h5 class="card-title" contenteditable="true">Misión</h5>
+                            <p class="card-text" contenteditable="true"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../../static/img/vision.jpg" alt="Visión" class="card-img-top">
+                        <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                        <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                        <div class="card-body">
+                            <h5 class="card-title" contenteditable="true">Visión</h5>
+                            <p class="card-text" contenteditable="true"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../../static/img/servicios.jpg" alt="Servicios" class="card-img-top">
+                        <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                        <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                        <div class="card-body">
+                            <h5 class="card-title" contenteditable="true">Servicios</h5>
+                            <p class="card-text" contenteditable="true"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media-section py-5">
+        <div class="container text-center">
+            <h3 class="text-white mb-4" contenteditable="true">Conéctate con Nosotros</h3>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.instagram.com" target="_blank" class="me-3">
+                    <img src="static/img/icons/instagram.png" alt="Instagram" class="img-fluid" style="width: 40px;">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                    <img src="static/img/icons/linkedin.png" alt="LinkedIn" class="img-fluid" style="width: 40px;">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="static/img/icons/X.png" alt="X (Twitter)" class="img-fluid" style="width: 40px;">
+                    <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                    <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="text-white py-3">
+        <div class="container text-center">
+            &copy; 2024 PORTUARIA - Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script>
+        function triggerFileInput(button) {
+            const fileInput = button.previousElementSibling;
+            fileInput.click();
+        }
+
+        function updateImage(input) {
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgElement = input.previousElementSibling;
+                    imgElement.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
