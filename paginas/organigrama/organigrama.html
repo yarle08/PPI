@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama - Portuaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="../../static/img/icons/logo_espomalia.png" alt="Logo Portuaria" class="img-fluid">
+            </div>
+            
+            <!-- Menú principal para pantallas grandes -->
+            <nav class="d-none d-md-flex">
+                <a href="../../index.html" class="text-white text-decoration-none mx-3">Inicio</a>
+                <a href="../../paginas/nuestros_servicios/nuestro_servicios.html" class="text-white text-decoration-none mx-3">Nuestros Servicios</a>
+                <a href="../../paginas/sobre_nosotros/sobre_nosotros.html" class="text-white text-decoration-none mx-3">Sobre Nosotros</a>
+                <a href="../../paginas/organigrama/organigrama.html" class="text-white text-decoration-none mx-3">Organigrama</a>
+                <a href="../../paginas/contactenos/contactenos.html" class="text-white text-decoration-none mx-3">Contáctanos</a>
+            </nav>
+            
+            <button class="btn btn-primary d-none d-md-block" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+    
+            <!-- Botón de menú hamburguesa -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Menú desplegable para móviles -->
+        <div class="collapse navbar-collapse d-md-none" id="mobileMenu">
+            <nav class="navbar-nav text-center">
+                <a href="../../index.html" class="nav-link">Inicio</a>
+                <a href="../../paginas/nuestros_servicios/nuestro_servicios.html" class="nav-link">Nuestros Servicios</a>
+                <a href="../../paginas/sobre_nosotros/sobre_nosotros.html" class="nav-link">Sobre Nosotros</a>
+                <a href="../../paginas/organigrama/organigrama.html" class="nav-link">Organigrama</a>
+                <a href="../../paginas/contactenos/contactenos.html" class="nav-link">Contáctanos</a>
+                <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+   
+    <section class="organigram container text-center mt-5">
+        <h2>Organigrama de la Empresa</h2>
+        <div class="role-container">
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#presidenteModal">
+                <div class="role-title">Presidente</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#vicepresidenteModal">
+                <div class="role-title">Vicepresidente</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#contadorModal">
+                <div class="role-title">Contador</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#empleadosModal">
+                <div class="role-title">Empleados</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="presidenteModal" tabindex="-1" aria-labelledby="presidenteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="presidenteModalLabel">Presidente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/presidente.jpg" alt="Presidente" class="img-fluid mb-3" style="max-height: 200px;">
+                    <p>El presidente lidera la estrategia general de la empresa y supervisa todas las operaciones clave.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vicepresidenteModal" tabindex="-1" aria-labelledby="vicepresidenteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vicepresidenteModalLabel">Vicepresidente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/vicepresidente.jpg" alt="Vicepresidente" class="img-fluid mb-3" style="max-height: 200px;">
+                    <p>El vicepresidente apoya al presidente y se encarga de áreas clave como desarrollo y operaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contadorModal" tabindex="-1" aria-labelledby="contadorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contadorModalLabel">Contador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/contador.jpg" alt="Contador" class="img-fluid mb-3" style="max-height: 200px;">
+                    <p>El contador gestiona las finanzas de la empresa, asegurando la transparencia y la eficiencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="empleadosModal" tabindex="-1" aria-labelledby="empleadosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empleadosModalLabel">Empleados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/empleados.webp" alt="Empleados" class="img-fluid mb-3" style="max-height: 200px;">
+                    <p>Los empleados son el motor de la empresa, trabajando en diversas áreas para alcanzar los objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" onsubmit="return handleLogin(event)">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <a href="../../adminpaginas/inicioadmin/indexadmin.html" class="btn btn-primary">Iniciar Sesión</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2024 PORTUARIA - Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

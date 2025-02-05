@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama - Portuaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="static/img/icons/logo_espomalia.png" alt="Logo Portuaria" class="img-fluid">
+                <input type="file" accept="image/*" class="d-none" onchange="updateImage(this)">
+                <button class="btn btn-link text-decoration-none" onclick="triggerFileInput(this)">Editar</button>
+            </div>
+            <nav class="d-none d-md-flex">
+                <a href="#" class="text-white text-decoration-none mx-3">Inicio</a>
+                <a href="../../adminpaginas/inicioadmin/indexadmin.html"
+                <a href="../../adminpaginas/nuestros_serviciosadmin/nuestro_servicios.html" class="text-white text-decoration-none mx-3">Nuestros Servicios</a>
+                <a href="../../adminpaginas/sobrenosotros_admin/sobre_nosotros.html" class="text-white text-decoration-none mx-3">Sobre Nosotros</a>
+                <a href="../../adminpaginas/organigrama_admin/organigrama.html" class="text-white text-decoration-none mx-3">Organigrama</a>
+                <a href="../../adminpaginas/contactenosadmin/contactenos.html" class="text-white text-decoration-none mx-3">Contáctanos</a>
+            </nav>
+            <a href="../../index.html" class="btn btn-danger">Salir</a>
+
+        </div>
+    </header>
+    
+    <script>
+        function logout() {
+            // Lógica para cerrar sesión o redirigir
+            alert('Has cerrado sesión.');
+            window.location.href = 'index.html'; // Redirigir al inicio
+        }
+    </script>
+    
+
+    <section class="organigram container text-center mt-5">
+        <h2 contenteditable="true">Organigrama de la Empresa</h2>
+        <div class="role-container">
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#presidenteModal">
+                <div class="role-title" contenteditable="true">Presidente</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#vicepresidenteModal">
+                <div class="role-title" contenteditable="true">Vicepresidente</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#contadorModal">
+                <div class="role-title" contenteditable="true">Contador</div>
+            </div>
+            <div class="role-box" data-bs-toggle="modal" data-bs-target="#empleadosModal">
+                <div class="role-title" contenteditable="true">Empleados</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="presidenteModal" tabindex="-1" aria-labelledby="presidenteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="presidenteModalLabel" contenteditable="true">Presidente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/presidente.jpg" alt="Presidente" class="img-fluid mb-3" style="max-height: 200px;">
+                    <button class="btn btn-link text-decoration-none" onclick="editImage(this, '../../static/img/presidente.jpg')">Editar</button>
+                    <p contenteditable="true">El presidente lidera la estrategia general de la empresa y supervisa todas las operaciones clave.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="vicepresidenteModal" tabindex="-1" aria-labelledby="vicepresidenteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vicepresidenteModalLabel" contenteditable="true">Vicepresidente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/vicepresidente.jpg" alt="Vicepresidente" class="img-fluid mb-3" style="max-height: 200px;">
+                    <button class="btn btn-link text-decoration-none" onclick="editImage(this, '../../static/img/vicepresidente.jpg')">Editar</button>
+                    <p contenteditable="true">El vicepresidente apoya al presidente y se encarga de áreas clave como desarrollo y operaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contadorModal" tabindex="-1" aria-labelledby="contadorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contadorModalLabel" contenteditable="true">Contador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/contador.jpg" alt="Contador" class="img-fluid mb-3" style="max-height: 200px;">
+                    <button class="btn btn-link text-decoration-none" onclick="editImage(this, '../../static/img/contador.jpg')">Editar</button>
+                    <p contenteditable="true">El contador gestiona las finanzas de la empresa, asegurando la transparencia y la eficiencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="empleadosModal" tabindex="-1" aria-labelledby="empleadosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="empleadosModalLabel" contenteditable="true">Empleados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../../static/img/empleados.webp" alt="Empleados" class="img-fluid mb-3" style="max-height: 200px;">
+                    <button class="btn btn-link text-decoration-none" onclick="editImage(this, '../../static/img/empleados.webp')">Editar</button>
+                    <p contenteditable="true">Los empleados son el motor de la empresa, trabajando en diversas áreas para alcanzar los objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <div class="editable" contenteditable="true">&copy; 2024 PORTUARIA - Todos los derechos reservados</div>
+    </footer>
+
+    <script>
+        function editImage(button, currentSrc) {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.onchange = () => {
+                const file = fileInput.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        button.previousElementSibling.src = reader.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            fileInput.click();
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
